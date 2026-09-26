@@ -1,0 +1,868 @@
+{
+  "home": {
+    "eyebrow": "What we do",
+    "headline": "Infrastructure • Earthworks • Groundworks • RC Frames",
+    "film": "https://www.coinford.co.uk/wp-content/uploads/2025/06/video-output-BBDA24CC-5CA1-46C4-941E-F7B2FE0359AC.mp4",
+    "closingFilm": "https://www.coinford.co.uk/wp-content/uploads/2024/07/3D05140B-E374-4490-8CE5-61A1F32A25E5.mp4",
+    "poster": {
+      "src": "/media/home/hero-poster.jpg",
+      "width": 2000,
+      "height": 1125,
+      "source": "https://www.coinford.co.uk/wp-content/uploads/revslider/video-media/video-output-BBDA24CC-5CA1-46C4-941E-F7B2FE0359AC_1-scaled.jpeg"
+    },
+    "expertise": {
+      "src": "/media/home/expertise.jpg",
+      "width": 2000,
+      "height": 1043,
+      "source": "https://www.coinford.co.uk/wp-content/uploads/2024/11/858B01B7-79E7-4585-98ED-B24C57013BDC-scaled-e1732699095873.jpeg"
+    },
+    "stats": [
+      {
+        "value": 1200,
+        "suffix": "",
+        "label": "Workforce"
+      },
+      {
+        "value": 175,
+        "suffix": ",000,000",
+        "label": "£ Current Projected"
+      },
+      {
+        "value": 35,
+        "suffix": "",
+        "label": "years"
+      },
+      {
+        "value": 200,
+        "suffix": ",000,000",
+        "label": "£ growth target"
+      }
+    ],
+    "clients": [
+      {
+        "name": "Barratt Redrow",
+        "logo": {
+          "src": "/media/clients/barrett-redrow-e1734454668880.png",
+          "width": 255,
+          "height": 176,
+          "source": "https://www.coinford.co.uk/wp-content/uploads/2024/12/barrett-redrow-e1734454668880.png"
+        }
+      },
+      {
+        "name": "Vistry Group",
+        "logo": {
+          "src": "/media/clients/vistry-group-logo-0.png",
+          "width": 301,
+          "height": 167,
+          "source": "https://www.coinford.co.uk/wp-content/uploads/2024/12/vistry-Group-logo_0.png"
+        }
+      },
+      {
+        "name": "London Square",
+        "logo": {
+          "src": "/media/clients/londonsquarelogo-1.png",
+          "width": 600,
+          "height": 400,
+          "source": "https://www.coinford.co.uk/wp-content/uploads/2024/12/londonsquarelogo-1.png"
+        }
+      },
+      {
+        "name": "Places for People",
+        "logo": {
+          "src": "/media/clients/placesforpeoplelogo.png",
+          "width": 600,
+          "height": 400,
+          "source": "https://www.coinford.co.uk/wp-content/uploads/2024/12/placesforpeoplelogo.png"
+        }
+      },
+      {
+        "name": "McLaren",
+        "logo": {
+          "src": "/media/clients/mclarenlogo-e1728418665638.png",
+          "width": 427,
+          "height": 193,
+          "source": "https://www.coinford.co.uk/wp-content/uploads/2024/12/mclarenlogo-e1728418665638.png"
+        }
+      },
+      {
+        "name": "Lovell",
+        "logo": {
+          "src": "/media/clients/lovelllogo.png",
+          "width": 600,
+          "height": 400,
+          "source": "https://www.coinford.co.uk/wp-content/uploads/2024/12/lovelllogo.png"
+        }
+      },
+      {
+        "name": "Keepmoat",
+        "logo": {
+          "src": "/media/clients/keepmoatlogo.png",
+          "width": 600,
+          "height": 400,
+          "source": "https://www.coinford.co.uk/wp-content/uploads/2024/12/keepmoatlogo.png"
+        }
+      },
+      {
+        "name": "Higgins Homes",
+        "logo": {
+          "src": "/media/clients/higgingshomeslogo.png",
+          "width": 600,
+          "height": 400,
+          "source": "https://www.coinford.co.uk/wp-content/uploads/2024/12/higgingshomeslogo.png"
+        }
+      },
+      {
+        "name": "Bellway",
+        "logo": {
+          "src": "/media/clients/bellwaylogo.png",
+          "width": 600,
+          "height": 400,
+          "source": "https://www.coinford.co.uk/wp-content/uploads/2024/12/bellwaylogo.png"
+        }
+      },
+      {
+        "name": "Crest Nicholson",
+        "logo": {
+          "src": "/media/clients/crestnicholsonlogo.png",
+          "width": 600,
+          "height": 400,
+          "source": "https://www.coinford.co.uk/wp-content/uploads/2024/12/crestnicholsonlogo.png"
+        }
+      },
+      {
+        "name": "Thakeham",
+        "logo": {
+          "src": "/media/clients/thakehamlogo-1.png",
+          "width": 600,
+          "height": 400,
+          "source": "https://www.coinford.co.uk/wp-content/uploads/2024/12/thakehamlogo-1.png"
+        }
+      }
+    ],
+    "contactHeading": "Have questions? Get in touch!"
+  },
+  "about": {
+    "eyebrow": "Who We Are",
+    "title": "Building Strong Foundations Together",
+    "intro": [
+      "At Coinford, we believe that understanding the bigger picture enables us to adapt to the many varieties of difficulties that can be encountered when preparing a site for construction and development.",
+      "It is through this understanding that we are best positioned to deal quickly and effectively with any situation that may arise.",
+      "Since our establishment in 1990, we have built up a reputation of experience and professionalism, which has enabled us to successfully complete many different contracts, each of which has given us the opportunity to evolve the elements of our business.",
+      "We do not believe that any company can afford to ignore the changing needs and processes of the construction industry. We continue to strive to improve the services we offer our customers through this process of evolution."
+    ],
+    "timeline": [
+      {
+        "year": "1990",
+        "label": "Business started"
+      },
+      {
+        "year": "1995",
+        "label": "Progressed into reinforced concrete frame structures"
+      },
+      {
+        "year": "1998",
+        "label": "East Anglia region expansion drive"
+      },
+      {
+        "year": "1999",
+        "label": "Acquired Burstow new offices and plant yard industrial estate"
+      },
+      {
+        "year": "2006",
+        "label": "Wimbledon large RC Frame Secured (value £30 million)"
+      },
+      {
+        "year": "2010",
+        "label": "Hackney constructed 32 storey resi block"
+      },
+      {
+        "year": "2014",
+        "label": "Dartford project secured (value £36 million)"
+      },
+      {
+        "year": "2017",
+        "label": "Specialist remediation investment for large civils works"
+      },
+      {
+        "year": "2021",
+        "label": "Management development programme launch in partnership with Franklin Covey"
+      },
+      {
+        "year": "2021",
+        "label": "Site Teams offices £1.2 million investment"
+      },
+      {
+        "year": "2022",
+        "label": "Training Centre Opened"
+      },
+      {
+        "year": "2023",
+        "label": "Luton regional office opened"
+      },
+      {
+        "year": "2024",
+        "label": "GPS technology £1 million investment launch"
+      }
+    ],
+    "mission": [
+      "To be the contractor of choice for our clients and the employer of choice for our people & supply chain, delivering Quality, As promised, On time.",
+      "To retain and attract the most talented and focused people that consistently deliver Win-Win solutions across all of our operations.",
+      "To continually drive an innovative, adventurous and courageous approach to our work, supported by a structured training and development platform for our staff.",
+      "To always provide a safe working environment to all those involved in our activities and to promote pride in our work, at every level of our business.",
+      "To deliver consistently strong profits, allowing us to realise this mission and celebrate success."
+    ],
+    "missionEmphasis": "delivering Quality, As promised, On time.",
+    "missionPdfs": [
+      {
+        "language": "Irish",
+        "href": "https://www.coinford.co.uk/wp-content/uploads/2024/08/Coinford-Mission_Values_Nov-2023-Irish.pdf"
+      },
+      {
+        "language": "English",
+        "href": "https://www.coinford.co.uk/wp-content/uploads/2024/08/Coinford-Mission_Values_Nov-2023-English.pdf"
+      },
+      {
+        "language": "Indian (Hindi)",
+        "href": "https://www.coinford.co.uk/wp-content/uploads/2024/08/Coinford-Mission_Values_Nov-23-Hindi.pdf"
+      },
+      {
+        "language": "Romanian",
+        "href": "https://www.coinford.co.uk/wp-content/uploads/2024/08/Coinford-Mission_Values_Nov-2023-Romanian.pdf"
+      },
+      {
+        "language": "Lithuanian",
+        "href": "https://www.coinford.co.uk/wp-content/uploads/2024/08/Coinford-Mission_Values_Nov-2023-Lithuanian.pdf"
+      },
+      {
+        "language": "Albanian",
+        "href": "https://www.coinford.co.uk/wp-content/uploads/2024/08/Coinford-Mission_Values_Nov-2023-Albanian.pdf"
+      }
+    ],
+    "offer": {
+      "eyebrow": "What we offer",
+      "title": "We Excel in",
+      "rotating": [
+        "Groundwork and Site Preparation",
+        "Concrete Frame Construction",
+        "Innovative Construction Solutions"
+      ],
+      "lead": "We work together with our clients as an integral part of their projects, offering services and expert advice on areas such as:",
+      "items": [
+        "Bulk excavation",
+        "Infrastructure / Civils",
+        "Groundwork",
+        "Basements / Underground car parks",
+        "Drainage and storage systems",
+        "Concrete frame superstructures"
+      ],
+      "range": "For contracts ranging from £5 million – £50 million throughout the South East of England."
+    },
+    "hero": {
+      "src": "/media/about/who-we-are.jpg",
+      "width": 2000,
+      "height": 1125,
+      "source": "https://www.coinford.co.uk/wp-content/uploads/2025/06/dji_fly_20250528_113316_0313_1748517036284_photo-scaled.jpg"
+    },
+    "coverage": {
+      "src": "/media/about/coverage-map.png",
+      "width": 3611,
+      "height": 2018,
+      "source": "https://www.coinford.co.uk/wp-content/uploads/2025/07/Coverage-Map-June-25v2-1.png"
+    },
+    "film": "https://www.coinford.co.uk/wp-content/uploads/2024/07/EDB96B13-E2B2-49DF-BC1C-3917BC5A2165-online-video-cutter.com_.mp4"
+  },
+  "plant": {
+    "sections": [
+      {
+        "title": "Plant Desk",
+        "body": "Our plant desk plays a crucial role in ensuring the smooth operation and efficiency of our construction projects. The plant desk serves as the central hub for all plant-related requests and queries, providing a streamlined process for managing equipment needs."
+      },
+      {
+        "title": "In-House Training Facilities",
+        "body": "At Coinford, we understand that our people are our greatest asset. To support their growth and development, we have established comprehensive in-house training facilities. These facilities provide our team with the necessary skills and knowledge to operate our equipment safely and efficiently. By investing in our employees' training, we ensure that they are well-prepared to handle the challenges of the industry and deliver exceptional service to our clients."
+      },
+      {
+        "title": "Continuous Investment in Plant",
+        "body": "We believe in the importance of maintaining and upgrading our equipment to stay ahead in the industry. Our ongoing investments ensure that our plant is equipped with the latest technology and machinery, enabling us to deliver top-notch services to our clients. This commitment to continuous improvement helps us maintain our competitive edge and ensures that we can meet the evolving needs of our customers."
+      },
+      {
+        "title": "Self-Delivery of Workshop Repairs",
+        "body": "Our workshop is a testament to our commitment to quality and efficiency. Equipped with the latest tools and technology, our workshop allows us to perform maintenance and repairs on-site, minimising downtime and ensuring that our equipment is always in optimal condition. Our skilled technicians work diligently to keep our machinery running smoothly, ensuring that we can meet our clients' needs without interruption."
+      },
+      {
+        "title": "Mobile Mechanics",
+        "body": "We have a team of highly skilled mobile fitters who are always ready to respond to any maintenance or repair needs. Our mobile fitters are equipped with the necessary tools and expertise to handle a wide range of issues on-site, ensuring that our clients experience minimal disruption to their operations."
+      },
+      {
+        "title": "Transport and Road Sweepers",
+        "body": "Our fleet of trucks and sweepers play a crucial role in supporting our construction business, ensuring that our equipment is delivered and collected efficiently and making sure that sites are clean which not only enhances the safety of our sites but also contributes to the overall efficiency of our operations."
+      }
+    ],
+    "closing": "At Coinford, we are dedicated to continuous improvement and excellence in all that we do. Our investments in our plant, training facilities, workshop, mobile fitters, transport, and sweepers are a reflection of our commitment to providing the best possible service to our clients.",
+    "fleetLabel": "Our Machinery Showcase",
+    "fleetTitle": "Our Fleet of Machinery",
+    "fleetCopy": "At Coinford, we pride ourselves on our extensive fleet of state-of-the-art plant and machinery. Our commitment to excellence is reflected in the quality and diversity of our equipment, which is meticulously maintained to ensure optimal performance on every project. From heavy-duty excavators, dozers, dump trucks to GPS technology, our machinery enables us to deliver exceptional results across all construction phases.",
+    "images": [
+      {
+        "src": "/media/plant/img-3480-scaled.jpg",
+        "width": 2000,
+        "height": 1500,
+        "source": "https://www.coinford.co.uk/wp-content/uploads/2024/09/IMG_3480-scaled.jpeg"
+      },
+      {
+        "src": "/media/plant/whatsapp-image-2024-10-30-at-08-56-15.jpg",
+        "width": 2000,
+        "height": 1500,
+        "source": "https://www.coinford.co.uk/wp-content/uploads/2024/11/WhatsApp-Image-2024-10-30-at-08.56.15.jpeg"
+      },
+      {
+        "src": "/media/plant/dsc08937-scaled.jpg",
+        "width": 2000,
+        "height": 1333,
+        "source": "https://www.coinford.co.uk/wp-content/uploads/2024/11/DSC08937-scaled.jpg"
+      },
+      {
+        "src": "/media/plant/858b01b7-79e7-4585-98ed-b24c57013bdc-scaled-e1732699095873.jpg",
+        "width": 2000,
+        "height": 1043,
+        "source": "https://www.coinford.co.uk/wp-content/uploads/2024/11/858B01B7-79E7-4585-98ED-B24C57013BDC-scaled-e1732699095873.jpeg"
+      },
+      {
+        "src": "/media/plant/img-9250-e1732700222186.jpg",
+        "width": 2000,
+        "height": 949,
+        "source": "https://www.coinford.co.uk/wp-content/uploads/2024/11/IMG_9250-e1732700222186.jpg"
+      }
+    ],
+    "fleet": [
+      {
+        "src": "/media/plant/fleet/wing2.jpg",
+        "width": 2000,
+        "height": 1053,
+        "source": "https://www.coinford.co.uk/wp-content/uploads/2024/04/wing2.jpg"
+      },
+      {
+        "src": "/media/plant/fleet/bexley-heath-3.jpg",
+        "width": 2000,
+        "height": 1338,
+        "source": "https://www.coinford.co.uk/wp-content/uploads/2024/04/bexley-heath-3.jpg"
+      },
+      {
+        "src": "/media/plant/fleet/asset-3-80.jpg",
+        "width": 2000,
+        "height": 1338,
+        "source": "https://www.coinford.co.uk/wp-content/uploads/2024/04/Asset-3-80.jpg"
+      },
+      {
+        "src": "/media/plant/fleet/dji-fly-20240418-115602-488-1713438834322-video-2-scaled.jpg",
+        "width": 2000,
+        "height": 1125,
+        "source": "https://www.coinford.co.uk/wp-content/uploads/revslider/video-media/dji_fly_20240418_115602_488_1713438834322_video_2-scaled.jpeg"
+      },
+      {
+        "src": "/media/plant/fleet/dji-fly-20240418-115602-488-1713438834322-video-1-scaled.jpg",
+        "width": 2000,
+        "height": 1125,
+        "source": "https://www.coinford.co.uk/wp-content/uploads/revslider/video-media/dji_fly_20240418_115602_488_1713438834322_video_1-scaled.jpeg"
+      },
+      {
+        "src": "/media/plant/fleet/0b1a9742-1404-44dc-895f-99d65219e292-scaled.jpg",
+        "width": 2000,
+        "height": 1500,
+        "source": "https://www.coinford.co.uk/wp-content/uploads/2024/07/0B1A9742-1404-44DC-895F-99D65219E292-scaled.jpeg"
+      },
+      {
+        "src": "/media/plant/fleet/858b01b7-79e7-4585-98ed-b24c57013bdc-scaled.jpg",
+        "width": 2000,
+        "height": 1500,
+        "source": "https://www.coinford.co.uk/wp-content/uploads/2024/07/858B01B7-79E7-4585-98ED-B24C57013BDC-scaled.jpeg"
+      },
+      {
+        "src": "/media/plant/fleet/img-4821-edited-scaled.jpg",
+        "width": 2000,
+        "height": 1437,
+        "source": "https://www.coinford.co.uk/wp-content/uploads/2024/07/IMG_4821_edited-scaled.jpg"
+      },
+      {
+        "src": "/media/plant/fleet/sweeper-fa000811-scaled.jpg",
+        "width": 2000,
+        "height": 1348,
+        "source": "https://www.coinford.co.uk/wp-content/uploads/2024/07/Sweeper-FA000811-scaled.jpg"
+      },
+      {
+        "src": "/media/plant/fleet/666cc65c-d019-4e1a-b58a-922ff49d3e2e-scaled.jpg",
+        "width": 2000,
+        "height": 1125,
+        "source": "https://www.coinford.co.uk/wp-content/uploads/2023/03/666CC65C-D019-4E1A-B58A-922FF49D3E2E-scaled.jpeg"
+      },
+      {
+        "src": "/media/plant/fleet/71b0dac6-be52-4f2e-920c-2aeb3621b795-scaled.jpg",
+        "width": 1333,
+        "height": 2000,
+        "source": "https://www.coinford.co.uk/wp-content/uploads/2024/07/71B0DAC6-BE52-4F2E-920C-2AEB3621B795-scaled.jpeg"
+      },
+      {
+        "src": "/media/plant/fleet/c82b9145-f87c-4f0a-be2c-9ac9eac04531-scaled.jpg",
+        "width": 2000,
+        "height": 1500,
+        "source": "https://www.coinford.co.uk/wp-content/uploads/2024/07/C82B9145-F87C-4F0A-BE2C-9AC9EAC04531-scaled.jpeg"
+      },
+      {
+        "src": "/media/plant/fleet/666cc65c-d019-4e1a-b58a-922ff49d3e2e-scaled.jpg",
+        "width": 2000,
+        "height": 1125,
+        "source": "https://www.coinford.co.uk/wp-content/uploads/2024/07/666CC65C-D019-4E1A-B58A-922FF49D3E2E-scaled.jpeg"
+      },
+      {
+        "src": "/media/plant/fleet/dji-fly-20240508-144834-565-1715176561328-photo-scaled.jpg",
+        "width": 2000,
+        "height": 1125,
+        "source": "https://www.coinford.co.uk/wp-content/uploads/2024/07/dji_fly_20240508_144834_565_1715176561328_photo-scaled.jpeg"
+      },
+      {
+        "src": "/media/plant/fleet/dji-fly-20240320-131824-367-1711010230236-photo-scaled.jpg",
+        "width": 2000,
+        "height": 1500,
+        "source": "https://www.coinford.co.uk/wp-content/uploads/2024/07/dji_fly_20240320_131824_367_1711010230236_photo-scaled.jpeg"
+      },
+      {
+        "src": "/media/plant/fleet/dji-fly-20240511-130816-634-1715429897362-photo-scaled.jpg",
+        "width": 2000,
+        "height": 1125,
+        "source": "https://www.coinford.co.uk/wp-content/uploads/2024/07/dji_fly_20240511_130816_634_1715429897362_photo-scaled.jpeg"
+      },
+      {
+        "src": "/media/plant/fleet/dji-fly-20240123-083300-313-1705998893781-photo-scaled.jpg",
+        "width": 2000,
+        "height": 1500,
+        "source": "https://www.coinford.co.uk/wp-content/uploads/2024/07/dji_fly_20240123_083300_313_1705998893781_photo-scaled.jpeg"
+      },
+      {
+        "src": "/media/plant/fleet/dji-fly-20240220-135922-287-1708437920883-photo-scaled.jpg",
+        "width": 2000,
+        "height": 1500,
+        "source": "https://www.coinford.co.uk/wp-content/uploads/2024/07/dji_fly_20240220_135922_287_1708437920883_photo-scaled.jpeg"
+      },
+      {
+        "src": "/media/plant/fleet/dji-fly-20240220-140012-289-1708437911480-photo-scaled.jpg",
+        "width": 2000,
+        "height": 1500,
+        "source": "https://www.coinford.co.uk/wp-content/uploads/2024/07/dji_fly_20240220_140012_289_1708437911480_photo-scaled.jpeg"
+      },
+      {
+        "src": "/media/plant/fleet/dji-fly-20240418-114630-464-1713439336118-photo-scaled.jpg",
+        "width": 2000,
+        "height": 1125,
+        "source": "https://www.coinford.co.uk/wp-content/uploads/2024/07/dji_fly_20240418_114630_464_1713439336118_photo-scaled.jpeg"
+      },
+      {
+        "src": "/media/plant/fleet/image00004-scaled.jpg",
+        "width": 2000,
+        "height": 1500,
+        "source": "https://www.coinford.co.uk/wp-content/uploads/2024/07/image00004-scaled.jpeg"
+      }
+    ]
+  },
+  "hsqe": {
+    "eyebrow": "Health Safety Quality Environment",
+    "safety": [
+      "Coinford puts the Health and Safety of its workforce at the heart of every project. We have achieved an incredible milestone of completing over 2,000,000 working hours without a RIDDOR reportable incident across the Coinford group. We are constantly striving to improve our Safety standards through our core values, training, implementing new technology and improving our procedures and processes.",
+      "In pursuit of continuous improvement, Coinford ensures all personnel have the skills and qualifications to carry out their duties safely and meet all statutory requirements. We are fully committed to competence-based card schemes CSCS/CPCS/NPORS ensuring our workforce is competent. In addition, we are proud to be an NPORS approved training centre and a CITB-approved training organisation, delivering quality training by our dedicated trainers to our workforce."
+    ],
+    "training": "Our internal training department continues to grow and develop. We have in-house facilities to enable a range of H&S courses to be delivered to a high standard. NPORS plant operators (excavator, roller, dumper, telehandler, loader), Slinger/signaller, Confined space, Safe working at height, Abrasive wheels, CAT and Genny, Vehicle traffic marshal and numerous other courses can be delivered by our experienced trainers at our dedicated training facility.",
+    "behaviour": "Coinford is proud to have developed and delivered Behavioural Change training across all levels of management within the business. At the site level ‘Worker Engagement’ training is completed, this promotes interaction and engagement with our operatives to further improve H&S standards on site. ‘7 Habits of Highly Effective People’ training is delivered to enable our management to perform to their best.",
+    "culture": "All of the above creates a Safety culture which ensures everyone works safely and returns home safely.",
+    "environmentTitle": "Environmental & Quality Performance",
+    "environmentIntro": "We take pride in delivering high-quality work while doing our part to protect the environment. As one of the leading contractors in the South East, we know that strong performance means doing things the right way, every time.",
+    "pillars": [
+      {
+        "title": "Looking After the Environment",
+        "body": "We work hard to reduce our environmental impact across all our sites. That includes cutting down on waste, managing materials responsibly, and finding smarter, lower-carbon ways of working. From implementing GPS technology to reduce idling times on site, to using solar powered lighting towers, we are focused on reducing the impact of our operations."
+      },
+      {
+        "title": "Focused on Quality",
+        "body": "Quality is built into everything we do. We’re certified to ISO 9001, and our management systems help us keep standards high from start to finish. Whether it’s early-stage planning, on-site delivery, or final handover, we focus on getting things right the first time — safely, efficiently, and to specification."
+      }
+    ],
+    "images": [
+      {
+        "src": "/media/hsqe/img-2409-scaled.jpg",
+        "width": 1500,
+        "height": 2000,
+        "source": "https://www.coinford.co.uk/wp-content/uploads/2024/07/IMG_2409-scaled.jpg"
+      },
+      {
+        "src": "/media/hsqe/h2.png",
+        "width": 158,
+        "height": 136,
+        "source": "https://www.coinford.co.uk/wp-content/uploads/2024/11/h2.png"
+      },
+      {
+        "src": "/media/hsqe/hs1.png",
+        "width": 150,
+        "height": 136,
+        "source": "https://www.coinford.co.uk/wp-content/uploads/2024/11/hs1.png"
+      },
+      {
+        "src": "/media/hsqe/img-20240819-wa0003.jpg",
+        "width": 1500,
+        "height": 2000,
+        "source": "https://www.coinford.co.uk/wp-content/uploads/2024/08/IMG-20240819-WA0003.jpg"
+      },
+      {
+        "src": "/media/hsqe/h4.jpg",
+        "width": 2000,
+        "height": 1657,
+        "source": "https://www.coinford.co.uk/wp-content/uploads/2024/11/h4.jpeg"
+      },
+      {
+        "src": "/media/hsqe/img-2417-scaled.jpg",
+        "width": 1500,
+        "height": 2000,
+        "source": "https://www.coinford.co.uk/wp-content/uploads/2024/07/IMG_2417-scaled.jpg"
+      }
+    ],
+    "iso": {
+      "src": "/media/hsqe/iso-9001.jpg",
+      "width": 2000,
+      "height": 1717,
+      "source": "https://www.coinford.co.uk/wp-content/uploads/2025/07/quality-logo-1.jpg"
+    },
+    "film": "https://www.coinford.co.uk/wp-content/uploads/2024/09/Training-Video-to-use.mp4"
+  },
+  "leadership": {
+    "eyebrow": "who we are",
+    "title": "Our team",
+    "intro": [
+      "From our Company Directors through to our experienced workforce, each individual within our team is committed to providing a high quality and professional service.",
+      "At Coinford, our strength lies in our people. Our team comprises dedicated professionals with diverse expertise in construction, engineering, project management, and safety. Each member brings a wealth of experience and a commitment to excellence, ensuring that every project is executed with precision and care."
+    ],
+    "structureTitle": "Team Structure Layout",
+    "structure": [
+      "Our own surveying, planning, estimating, engineering, construction and management teams work together from tender stage, through construction and onto completion. To ensure customer satisfaction, we offer an after sales service where we operate maintenance crews who specifically deal with remedial works and any additional customer requirements. Each and every project is constantly supervised by a Company Director who ensures there are regular site visits and client liaison meetings and who is always in direct control of the construction team of Contract Managers, Project Managers, Foremen and Engineers. With the direct senior management control that we have on all our contracts, we aim to ensure that any situations that may arise on site are dealt with efficiently, effectively and as quickly as possible."
+    ]
+  },
+  "careers": {
+    "title": "Discover Our Team’s Journeys at Coinford",
+    "intro": "Read below to learn about our staff’s experiences and see how they’ve advanced within the company.",
+    "stories": [
+      {
+        "slug": "louie-corne",
+        "name": "Louie Corne",
+        "story": [
+          "I started with Coinford as an apprentice in 2016 as an assistant engineer which gave me a great understanding of site standards and drawings for both groundworks and RC Frames. I have progressed to a junior engineer after furthering my knowledge and understanding and now a site engineer during this period.",
+          "Coinford were always helpful in every stage of my career. During my time, I have always worked with highly experienced engineers and managers that have pushed me to get the best out of myself with great support and guidance.",
+          "I have also used all types of engineering equipment with Coinford as they have vast range for all construction needs from standard EDM’s, Robotic and now GPS rovers."
+        ]
+      },
+      {
+        "slug": "ben-reynolds",
+        "name": "Ben Reynolds",
+        "story": [
+          "As a 25-Year-old Senior Engineer, I often get asked by people outside the company “How have you managed this role at a young age?”. The answer is simple, Coinford and their trust! I have worked for Coinford since leaving College at 17 and have seen how quickly you can go from being a worker to part of the Family.",
+          "Being incredibly lucky I found myself in an apprenticeship with Coinford where they invested their time, effort and money into me to help me grow a career out of a passion for engineering. Over the years I have learnt that Coinford are more than just a company to work for, guiding me through my HNC at Greenwich University, it became clear to me that Coinford were seeking to guide and help build peoples careers and skills through their years of experience.",
+          "Being involved in major Projects like Temple Hill, Dickens Gate, Martello Lakes and Whitfield I feel incredibly privileged to be able to boast about the vast array of projects Coinford has allowed me to see. From setting out large podium slabs in Temple Hill to overseeing major deep drainage works in Martello Lakes and Whitfield, there has been very little Coinford has yet to show me!",
+          "Coinford’s multitude of departments have been a great asset in making my time at Coinford a pleasant one. All departments work effectively and help to create a well-oiled machine that is Coinford, I know I can rely on the backing of our departments to help Construction run smoothly.",
+          "Seeing Coinford’s devotion to health and safety really helps me to know that not only will I be able to carry out all work safely and effectively, but also go home at the end of the day safe and secure! Something which I greatly appreciate.",
+          "The tools available to myself for engineering purposes are always top quality and are held to a high standard of care and calibration. Many new implementations across Coinford have also been a great addition, like the GPS units for our excavators. The support and help that comes with these tools if needed is always greatly appreciated also.",
+          "To conclude, my long time at Coinford has lead my to understand that Coinford not only invest and care about their teams, but invest and care about their plant, offices and quality of work we hand over. It has been a privilege working at Coinford and would highly recommend them to anyone look for a career in the Civil Engineering and Groundworks path."
+        ]
+      },
+      {
+        "slug": "clarice-mooney",
+        "name": "Clarice Mooney",
+        "story": [
+          "I have been working for Coinford since 2018 when I was given the opportunity to join the H&S Department as an apprentice. I was supported through learning all of the basics of H&S legislation, as well as how to practically apply safe working measures on site, gaining first-hand knowledge on the ground and eventually obtaining a SHE Technician Level 3.",
+          "After completing my apprenticeship I began working as a H&S Advisor, supervising a group of sites completing weekly inspections, advising sites on legislative changes and beginning to carry out training sessions on sites in topics such as abrasive wheels and face fit testing.",
+          "Last year I was promoted to H&S Manager with the increased responsibility of supervising other junior operatives and apprentices which is a role that I have accepted with great pride. It is a goal of mine to introduce young women into the construction industry to showcase the varied career prospects working in the construction industry and with a company like Coinford can have.",
+          "I have been supported throughout my career by amazing colleges with a wealth of experience to share, from people based in the office as well as the site teams on the ground. I never would have thought a career in construction was for me, but I feel incredibly lucky to have found Coinford who have given me amazing opportunities, career progression and have helped me grow in confidence and feel empowered as a person."
+        ]
+      },
+      {
+        "slug": "conor-power",
+        "name": "Conor Power",
+        "story": [
+          "I started working with Coinford in 2016 while I decided what path to choose as I finished school. During that time, it was an invaluable experience.",
+          "Moving forward six years I came back as a trainee manager to help me gain experience while I complete my diploma in project management. The hands-on learning at the start with the lads on site has truly helped me understand the trade. I’m grateful for the opportunity to gain practical skills and insights.",
+          "My time at Coinford has been incredibly rewarding. The company not only provided me with training but also offered continuous support and opportunities to advance in my career. With their guidance, I’ve gained valuable skills and experience, allowing me to move up the ladder and take on more responsibility. I’m grateful for the growth I’ve achieved here and look forward to continuing my journey with such a dedicated and forward-thinking company.",
+          "I want to thank the entire team for their help and encouragement throughout my time here.",
+          "Bring on many more years with Coinford."
+        ]
+      },
+      {
+        "slug": "guy-conyers",
+        "name": "Guy Conyers",
+        "story": [
+          "I have worked for Coinford for nearly 15 years now and have enjoyed my time with the company. I started as a machine operator and over the years have been promoted to foreman, site manger and then into my current job role of project manager.",
+          "Coinford are a great company to work for, they invest in their workforce, nurture potential and go above and beyond to invest in their operatives and ensure they are provided with any industry training they require to further their knowledge and expertise in groundworks and civil engineering.",
+          "The company has great systems in place which make the day to day running and record keeping for the projects smooth and efficient which in turn helps ensure that projects are delivered on time and to a high standard.",
+          "All departments of Coinford are well structured, helpful and the construction management framework works very well. When graduating into a higher job role at Coinford you always have a good support network around you to help you along if and when required.",
+          "The company invests heavily in plant each year which means we always have the best tools available to complete each project.",
+          "I would recommend Coinford to anyone working in the groundworks and civil engineering industry, or anyone contemplating a career in the industry. I can see myself working for Coinford for many more years to come."
+        ]
+      },
+      {
+        "slug": "james-robinson",
+        "name": "James Robinson",
+        "story": [
+          "I started with Coinford at the age of 18 jumping into the construction industry blind but willing to learn. That was almost 20 years ago now!! Most of my working life has been with Coinford and I have never felt the need to test the waters elsewhere as the company has always catered to my needs and I feel the support and help to progress has been there from the start until now. My time at Coinford has seen me progress from labourer to site manager and as I have evolved so have Coinford.I find the day to day running of the company and procedures they have outline everyone’s roles, tasks and functionality to form a growing and fully functional company which is evident from the amount of clients that so often award them work.Coinford has always been a great company to work for even with growth I feel the ethics, attitude and feel of the company has remained the same as it was when I started. With growth it’s great to see the expansion of plant and technology in a ever changing industry and I feel it’s great working for a company who are willing to invest to test out and try new things especially when we can see the difference out in the field.Coinford have always helped with training and progression which I feel has helped me grow as a person which has benefitted me in work and outside of work especially with learning the 7 habits. At the time I was not aware of what the 7 habits was and looked at it as training but upon learning I was surprised how much it was aimed at myself as a person and respected the fact that Coinford invested for myself and many others In to something that would help in day to day life rather than just as a worker or employee.I can see myself working for Coinford for many years and would highly recommend Coinford to anyone from a youngster starting out in the industry to a seasoned vet in any position or job role."
+        ]
+      },
+      {
+        "slug": "jason-white",
+        "name": "Jason White",
+        "story": [
+          "I started at Coinford in 2016 as the workshops first apprentice plant fitter.",
+          "Everything about the construction industry was new to me and this gave me a hands on learning experience amongst a great close knit team. After a few years and once qualified I ended up having my own apprentice in the workshop which brought a new challenge and way of working which I feel I benefited from.",
+          "Being in the workshop gave me more mechanical experience that I could’ve ever needed due to the vast and ever growing fleet of plant. I am now out of the workshop and expanding my knowledge as a mobile fitter within Coinford which allows me to engage more with the outside workings of the company and producing a new challenge for me to tackle.",
+          "Working and growing at Coinford has given me self confidence, initiative and experience which has made me who I am today and the support and opportunities that have been made available to me during my time have attributed to this."
+        ]
+      },
+      {
+        "slug": "karen-bridger",
+        "name": "Karen Bridger",
+        "story": [
+          "I started my career at Coinford almost 10 years ago as a Plant Hire Administrator. I have been entrusted with responsibilities and opportunities from the start which helped me to accelerate my growth. I have progressed to Hire Manager, Business Process and Reporting Manager, Operations Manager, to currently Plant Hire Office Manager for Coinford.",
+          "One of the things that impresses me about Coinford is the attitude of the employees, I get a sense of company loyalty in most members of the team mixed with genuine job satisfaction. Another great thing about working at Coinford is that a typical day is never typical, there is always something challenging happening and every day is filled with learning something new.",
+          "Coinford prioritises safety above all else, workplaces are maintained to ensure they are safe and without health risks with good facilities and arrangements for employees’ welfare.",
+          "The business continually invests in new plant to ensure we have the best and most up to date equipment for our clients",
+          "Coinford has a proactive approach to employee wellbeing, training and mentoring, and frequently organises social events, Coinford also recognises and celebrates success across the business",
+          "Overall Coinford has been one of the best places to work, I highly recommend Coinford to anybody wanting an enjoyable long career."
+        ]
+      },
+      {
+        "slug": "keioni-whitworth",
+        "name": "Keioni Whitworth",
+        "story": [
+          "I started with Coinford as an apprentice in 2016 as an assistant engineer and over the years I have worked up to becoming a junior engineer and now becoming a site engineer due to the support of others within the company",
+          "Coinford are a company that takes pride in the quality and standard of work that they produce and strive for the best which is why they provide lots of training to its workforce",
+          "In 2020 I had asked to join an apprenticeship to further my knowledge of engineering and by the end of 2023 I had manage to achieve a distinction grade in level 4 HNC civil engineering due to the skills and knowledge I picked up while on the job and from amazing teams we have on site"
+        ]
+      },
+      {
+        "slug": "kieran-fielding",
+        "name": "Kieran Fielding",
+        "story": [
+          "I have been working for Coinford for over 12 years through various roles and departments. I was a technician working in the Car industry and wanted to get into the Construction industry. I joined Coinford and worked out in the yard to get a better idea of construction and all the equipment involved, after a while I moved into the Workshop as a fitter to prepare and repair all the plant. While in the Workshop Coinford put me through a GNVQ in Plant maintenance and repair and various other courses to help me develop. After 4 years at Coinford I moved into the Plant office and was on the Groundworks and Formwork hire desk liaising with sites and putting their orders through the yard, I did this for 5 years. Now I am working in the workshop office as the Breakdown Controller, dealing with sites problems and controlling Five mobile fitters.",
+          "During my time at Coinford I have found the company to be very professional and willing to help push and progress their staff’s Knowledge and skills to higher levels. I have met and worked alongside some amazing people who are always willing to help and give support when needed. Coinford put Safety and staff welfare first and often provide staff with excellent social events and activities outside of work."
+        ]
+      },
+      {
+        "slug": "kirsty-summers",
+        "name": "Kirsty Summers",
+        "story": [
+          "I began with Coinford 10 years ago, starting without any prior experience in Finance. Over the years, I have had the opportunity to work in all three of Coinford’s Finance departments, growing both professionally and personally.",
+          "My career started in the Payables, where I was introduced to the intricacies of finance, I gradually developed my skills and advanced into the role of Supervisor, taking on more responsibilities and refining my leadership abilities.",
+          "Driven by my interest in the AAT qualification, I transitioned into Management Accounts. Coinford’s unwavering support during my studies, particularly during the challenges posed by Covid, was invaluable in helping me achieve the qualification.",
+          "Currently, I am working in the Payroll department, where I have discovered an unexpected new career path as a business analyst. The support and encouragement I’ve received have empowered me to develop my skills in report writing, leading to the creation of multiple new reports and a deeper understanding of the business’s needs.",
+          "Having worked across all three finance departments, I possess a comprehensive understanding of their operations. This insight has enabled me to implement new processes and identify areas for development, contributing to the continuous improvement of our financial practices.",
+          "The past 10 years with Coinford have flown by, and I am excited for what the next decade holds!"
+        ]
+      }
+    ],
+    "emptyStories": [],
+    "jobBoards": [
+      {
+        "label": "Current Vacancies",
+        "href": "https://jobboards.adlogic.com.au/coinford/"
+      },
+      {
+        "label": "Head Office & Plant Yard",
+        "href": "https://jobboards.adlogic.com.au/coinford/head-office-and-plant-yard/"
+      },
+      {
+        "label": "Site",
+        "href": "https://jobboards.adlogic.com.au/coinford/trades-and-labour/"
+      },
+      {
+        "label": "Current jobs",
+        "href": "https://jobboards.adlogic.com.au/coinford/"
+      }
+    ],
+    "clients": [
+      {
+        "name": "Redrow",
+        "logo": {
+          "src": "/media/clients/redowlogo-e1728418593324.png",
+          "width": 317,
+          "height": 239,
+          "source": "https://www.coinford.co.uk/wp-content/uploads/2024/08/redowlogo-e1728418593324.png"
+        }
+      },
+      {
+        "name": "Places for People",
+        "logo": {
+          "src": "/media/clients/placesforpeoplelogo.png",
+          "width": 600,
+          "height": 400,
+          "source": "https://www.coinford.co.uk/wp-content/uploads/2024/08/placesforpeoplelogo.png"
+        }
+      },
+      {
+        "name": "McLaren",
+        "logo": {
+          "src": "/media/clients/mclarenlogo-e1728418665638.png",
+          "width": 427,
+          "height": 193,
+          "source": "https://www.coinford.co.uk/wp-content/uploads/2024/08/mclarenlogo-e1728418665638.png"
+        }
+      },
+      {
+        "name": "Lovell",
+        "logo": {
+          "src": "/media/clients/lovelllogo.png",
+          "width": 600,
+          "height": 400,
+          "source": "https://www.coinford.co.uk/wp-content/uploads/2024/08/lovelllogo.png"
+        }
+      },
+      {
+        "name": "London Square",
+        "logo": {
+          "src": "/media/clients/londonsquarelogo-1.png",
+          "width": 600,
+          "height": 400,
+          "source": "https://www.coinford.co.uk/wp-content/uploads/2024/08/londonsquarelogo-1.png"
+        }
+      },
+      {
+        "name": "Keepmoat",
+        "logo": {
+          "src": "/media/clients/keepmoatlogo.png",
+          "width": 600,
+          "height": 400,
+          "source": "https://www.coinford.co.uk/wp-content/uploads/2024/08/keepmoatlogo.png"
+        }
+      },
+      {
+        "name": "Higgins Homes",
+        "logo": {
+          "src": "/media/clients/higgingshomeslogo.png",
+          "width": 600,
+          "height": 400,
+          "source": "https://www.coinford.co.uk/wp-content/uploads/2024/08/higgingshomeslogo.png"
+        }
+      },
+      {
+        "name": "Dandara",
+        "logo": {
+          "src": "/media/clients/dandaralogo.png",
+          "width": 600,
+          "height": 400,
+          "source": "https://www.coinford.co.uk/wp-content/uploads/2024/08/dandaralogo.png"
+        }
+      },
+      {
+        "name": "Barratt Homes",
+        "logo": {
+          "src": "/media/clients/barratthomeslogo.png",
+          "width": 600,
+          "height": 400,
+          "source": "https://www.coinford.co.uk/wp-content/uploads/2024/08/barratthomeslogo.png"
+        }
+      },
+      {
+        "name": "Bellway",
+        "logo": {
+          "src": "/media/clients/bellwaylogo.png",
+          "width": 600,
+          "height": 400,
+          "source": "https://www.coinford.co.uk/wp-content/uploads/2024/08/bellwaylogo.png"
+        }
+      },
+      {
+        "name": "Countryside Partnerships",
+        "logo": {
+          "src": "/media/clients/countrysidepartnershipslogo.png",
+          "width": 600,
+          "height": 400,
+          "source": "https://www.coinford.co.uk/wp-content/uploads/2024/08/countrysidepartnershipslogo.png"
+        }
+      },
+      {
+        "name": "Countryside Places",
+        "logo": {
+          "src": "/media/clients/countrysideplaceslogo.png",
+          "width": 600,
+          "height": 400,
+          "source": "https://www.coinford.co.uk/wp-content/uploads/2024/08/countrysideplaceslogo.png"
+        }
+      },
+      {
+        "name": "Crest Nicholson",
+        "logo": {
+          "src": "/media/clients/crestnicholsonlogo.png",
+          "width": 600,
+          "height": 400,
+          "source": "https://www.coinford.co.uk/wp-content/uploads/2024/08/crestnicholsonlogo.png"
+        }
+      }
+    ]
+  },
+  "vacancies": {
+    "roles": [
+      {
+        "group": "Head office",
+        "title": "Project Manager",
+        "description": "As a Project Manager, you will oversee all aspects of construction projects from planning through completion. This includes coordinating with architects, engineers, and subcontractors, managing budgets and timelines, ensuring compliance with safety regulations, and communicating progress to stakeholders. Your leadership will be essential in delivering projects on time and within budget, while maintaining the highest standards of quality and safety.",
+        "email": "info@coinford.co.uk"
+      },
+      {
+        "group": "Head office",
+        "title": "Site Supervisor",
+        "description": "The Site Supervisor is responsible for on-site management of construction projects. You will supervise work crews, monitor project progress, enforce safety protocols, and ensure that projects are completed according to specifications. Your role is critical in maintaining efficiency, quality, and safety on the job site.",
+        "email": "info@coinford.co.uk"
+      },
+      {
+        "group": "Head office",
+        "title": "Civil Engineer",
+        "description": "As a Civil Engineer, you will design, plan, and oversee the construction and maintenance of building structures and infrastructure, such as roads, bridges, and water supply systems. Your technical expertise will be vital in ensuring that our projects are safe, sustainable, and built to last.",
+        "email": "info@coinford.co.uk"
+      },
+      {
+        "group": "Site",
+        "title": "Project Manager",
+        "description": "As a Project Manager, you will oversee all aspects of construction projects from planning through completion. This includes coordinating with architects, engineers, and subcontractors, managing budgets and timelines, ensuring compliance with safety regulations, and communicating progress to stakeholders. Your leadership will be essential in delivering projects on time and within budget, while maintaining the highest standards of quality and safety.",
+        "email": "info@coinford.co.uk"
+      },
+      {
+        "group": "Site",
+        "title": "Site Supervisor",
+        "description": "The Site Supervisor is responsible for on-site management of construction projects. You will supervise work crews, monitor project progress, enforce safety protocols, and ensure that projects are completed according to specifications. Your role is critical in maintaining efficiency, quality, and safety on the job site.",
+        "email": "info@coinford.co.uk"
+      },
+      {
+        "group": "Site",
+        "title": "Civil Engineer",
+        "description": "As a Civil Engineer, you will design, plan, and oversee the construction and maintenance of building structures and infrastructure, such as roads, bridges, and water supply systems. Your technical expertise will be vital in ensuring that our projects are safe, sustainable, and built to last.",
+        "email": "info@coinford.co.uk"
+      }
+    ]
+  },
+  "contact": {
+    "eyebrow": "Contact Us",
+    "title": "Get in touch",
+    "intro": "Please contact us on the telephone number or email address provided and we will get back to you. Your enquiry will be routed from our reception team through to the appropriate department (Pre-Construction / Construction / Commercial / Plant / HR) and the relevant team member will get back to you as soon as possible.",
+    "offices": [
+      {
+        "name": "Head Office",
+        "lines": [
+          "Redeham Hall, 137 Redehall Road",
+          "Burstow, Surrey",
+          "RH6 9RJ"
+        ]
+      },
+      {
+        "name": "Luton Office",
+        "lines": [
+          "1st Floor Commercial Unit, Hatton Place",
+          "114-134 Midland Road, Luton",
+          "Beds, LU2 0BL"
+        ]
+      }
+    ],
+    "email": "info@coinford.co.uk",
+    "phone": "+44 (0)1342 840800",
+    "tel": "+441342840800"
+  }
+}
