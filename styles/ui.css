@@ -56,7 +56,7 @@ a:hover .photo img, .photo-zoom:hover img { transform: scale(1.03); }
 }
 
 /* ---------- Section heads, rules and lists ---------- */
-.section-head { display: grid; gap: 16px; max-width: 900px; }
+.section-head { display: grid; gap: 16px; max-width: 900px; align-content: start; }
 .section-head .h2 { max-width: 20ch; }
 .head-row { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: var(--gap); align-items: end; margin-bottom: clamp(36px, 4.5vw, 64px); }
 .head-row .body, .head-row .lede { max-width: 56ch; }

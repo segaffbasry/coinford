@@ -103,7 +103,7 @@ export function usePageMotion() {
 
     /* The header takes its colour from whichever section sits under it: [data-tone="dark"] sections flip it to white. */
     const root = document.documentElement;
-    const darkSections = () => Array.from(document.querySelectorAll<HTMLElement>("[data-tone='dark']"));
+    const darkSections = () => Array.from(document.querySelectorAll<HTMLElement>("main [data-tone='dark'], footer [data-tone='dark']"));
     let frame = 0;
     const update = () => {
       frame = 0;
@@ -135,7 +135,7 @@ export function focusOverlay(container: HTMLElement, close: () => void, trigger?
   getLenis()?.stop();
   document.documentElement.classList.add("overlay-open");
   const focusable = () => Array.from(container.querySelectorAll<HTMLElement>("a[href], button:not([disabled]), [tabindex='0']")).filter((el) => el.offsetParent !== null);
-  requestAnimationFrame(() => focusable()[0]?.focus({ preventScroll: true }));
+  focusable()[0]?.focus({ preventScroll: true });
   const handleKey = (event: KeyboardEvent) => {
     if (event.key === "Escape") { event.preventDefault(); close(); }
     if (event.key === "Tab") {

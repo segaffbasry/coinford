@@ -1,7 +1,7 @@
 /* Homepage sections. Proportions are hauze.pt's at 1440px unless noted. */
 
 /* ---------- Hero ---------- */
-.hero { padding-top: calc(var(--header) + clamp(8px, 3.2vw, 46px)); padding-bottom: var(--section); }
+.hero { padding-top: calc(var(--header) + clamp(8px, 3.2vw, 46px)); }
 .hero-top { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); gap: var(--gap); align-items: end; }
 .hero-heading .eyebrow { margin-bottom: clamp(12px, 1.4vw, 20px); }
 .hero-title { font-size: clamp(56px, 7vw, 112px); }
