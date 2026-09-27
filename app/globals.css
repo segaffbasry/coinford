@@ -1,0 +1,103 @@
+/* Coinford: tokens, type, layout and the reveal states. Component styles live in styles/*.css. */
+
+@font-face { font-family: "Bebas Neue"; src: url("/fonts/BebasNeue-Regular.woff2") format("woff2"); font-weight: 400; font-display: swap; }
+@font-face { font-family: "Roboto"; src: url("/fonts/Roboto-Variable.woff2") format("woff2"); font-weight: 300 700; font-display: swap; }
+
+:root {
+  /* The four brand colours. Nothing else carries hue; tints below are the same navy at lower strength. */
+  --navy: #1e2c51;   /* favicon ground, logo tile */
+  --blue: #0987c7;   /* live "Call us" button rgb(9,135,199) */
+  --white: #ffffff;
+  --stone: #e8eaef;  /* hauze.pt CTA band rgb(230,230,232), re-tinted towards navy */
+
+  --ink: var(--navy);
+  --muted: rgba(30, 44, 81, .74);       /* hauze body copy rgb(95,95,99) re-tinted; 6.1:1 on white */
+  --rule: rgba(30, 44, 81, .4);         /* hauze accordion rules rgba(0,0,0,.4) */
+  --hairline: rgba(30, 44, 81, .14);
+  --on-navy-muted: rgba(255, 255, 255, .78);
+  --on-navy-rule: rgba(255, 255, 255, .28);
+
+  /* Easing. --ease is harrowservice.com's appear curve, --ease-hover its hover curve,
+     --spring is hauze.pt's button spring (stiffness 500, damping 60, mass 1) sampled into linear() over its 0.49s visual settle. */
+  --ease: cubic-bezier(.35, 0, .25, 1);
+  --ease-hover: cubic-bezier(.44, 0, .56, 1);
+  --spring: linear(0, .0951, .2558, .407, .5327, .6333, .7128, .7751, .8239, .8622, .8921, .9156, .9339, .9483, .9595, .9683, .9752, .9806, .9848, .9881, 1);
+  --spring-duration: .49s;
+  --hover-duration: .2s;
+
+  /* Layout from hauze.pt at 1440px: 50px gutters, 70px column gap. */
+  --gutter: clamp(16px, 3.5vw, 50px);
+  --gap: clamp(24px, 4.9vw, 70px);
+  --max: 1540px;
+  --section: clamp(72px, 9vw, 140px);
+  --header: 104px;
+
+  --display: "Bebas Neue", "Arial Narrow", sans-serif;
+  --sans: "Roboto", "Helvetica Neue", Arial, sans-serif;
+  color-scheme: light;
+}
+
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+html.lenis, html.lenis body { height: auto; }
+.lenis.lenis-smooth { scroll-behavior: auto !important; }
+.lenis.lenis-stopped { overflow: clip; }
+body {
+  margin: 0; background: var(--white); color: var(--ink);
+  font-family: var(--sans); font-size: 16px; line-height: 1.4; font-weight: 400;
+  -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+  overflow-x: clip;
+}
+img, video, svg { display: block; max-width: 100%; }
+a { color: inherit; text-decoration: none; }
+button { font: inherit; color: inherit; background: none; border: 0; padding: 0; cursor: pointer; }
+h1, h2, h3, h4, h5, p, ul, ol, figure, blockquote, dl, dd { margin: 0; }
+ul, ol { padding: 0; list-style: none; }
+::selection { background: var(--navy); color: var(--white); }
+:focus-visible { outline: 2px solid var(--blue); outline-offset: 3px; }
+.tone-dark :focus-visible, [data-tone="dark"] :focus-visible { outline-color: var(--white); }
+
+/* ---------- Layout ---------- */
+.wrap { width: 100%; max-width: var(--max); margin-inline: auto; padding-inline: var(--gutter); }
+.section { padding-block: var(--section); position: relative; }
+.section + .section:not(.band):not(.navy-band) { padding-top: 0; }
+.band { background: var(--stone); }
+.navy-band { background: var(--navy); color: var(--white); }
+.split { display: grid; grid-template-columns: 1fr 1fr; gap: var(--gap); }
+.split-1-2 { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 2fr); gap: var(--gap); }
+@media (max-width: 900px) { .split, .split-1-2 { grid-template-columns: 1fr; gap: 28px; } }
+
+/* ---------- Type (hauze.pt scale: 55/66, 42/50.4, 32/38.4, 24/28.8, 20/24; body 16/22.4; lede 18/25.2) ---------- */
+.display { font-family: var(--display); font-weight: 400; line-height: .9; letter-spacing: .005em; text-transform: uppercase; }
+.h1 { font-size: clamp(38px, 3.8vw, 55px); line-height: 1.2; font-weight: 500; letter-spacing: -.012em; }
+.h2 { font-size: clamp(30px, 2.95vw, 42px); line-height: 1.2; font-weight: 500; letter-spacing: -.01em; }
+.h3 { font-size: clamp(24px, 2.2vw, 32px); line-height: 1.2; font-weight: 500; letter-spacing: -.008em; }
+.h4 { font-size: 24px; line-height: 1.2; font-weight: 500; }
+.h5 { font-size: 20px; line-height: 1.2; font-weight: 500; }
+.lede { font-size: 18px; line-height: 1.4; color: var(--muted); }
+.body { font-size: 16px; line-height: 1.4; color: var(--muted); }
+.body p + p, .lede p + p { margin-top: 1em; }
+.eyebrow { font-size: 14px; line-height: 1.4; }
+.label { font-size: 12px; line-height: 1.2; font-weight: 500; text-transform: uppercase; letter-spacing: .06em; }
+.navy-band .lede, .navy-band .body, .tone-dark .lede, .tone-dark .body { color: var(--on-navy-muted); }
+.num { font-variant-numeric: tabular-nums; }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+.skip-link { position: fixed; left: 12px; top: -60px; z-index: 200; background: var(--navy); color: var(--white); padding: 12px 16px; transition: top .2s var(--ease); }
+.skip-link:focus { top: 12px; }
+
+/* ---------- Reveal system (components/motion.tsx). Initial states apply only once JS has marked the element. ---------- */
+.wm { display: inline-block; overflow: clip; vertical-align: top; padding-bottom: .08em; margin-bottom: -.08em; }
+.wi { display: inline-block; will-change: transform; }
+[data-parallax] { overflow: clip; }
+[data-parallax] > img, [data-parallax] > video { height: 112% !important; top: -6% !important; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; scroll-behavior: auto !important; }
+  [data-parallax] > img, [data-parallax] > video { height: 100% !important; top: 0 !important; }
+}
+
+/* Before motion.tsx marks an element [data-shown], it waits hidden (only when JS runs and motion is allowed).
+   The 3s animation is a safety net: if scripts fail, content still appears. */
+html.js [data-reveal]:not([data-shown]) { opacity: 0; animation: reveal-failsafe .01s linear 3s forwards; }
+@keyframes reveal-failsafe { to { opacity: 1; } }

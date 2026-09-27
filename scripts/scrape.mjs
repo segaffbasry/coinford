@@ -275,7 +275,9 @@ async function careers() {
   // Each story is an Elementor loop item: the post body, then its title (the person's name).
   const stories = $(".e-loop-item").map((_, item) => {
     const name = tidy($(item).find(".elementor-widget-theme-post-title").text());
-    const story = $(item).find(".elementor-widget-theme-post-content p").map((__, p) => tidy($(p).text()).replace(/”$/, "").replace(/^“/, "")).get().filter(Boolean);
+    // Some stories were pasted without paragraph breaks ("…as have Coinford.I find…"); a full stop run into a capital starts a new paragraph.
+    const story = $(item).find(".elementor-widget-theme-post-content p").map((__, p) => tidy($(p).text()).replace(/”$/, "").replace(/^“/, "")).get()
+      .flatMap((para) => para.split(/(?<=[a-z][.!])(?=[A-Z])/)).map((para) => para.trim()).filter(Boolean);
     return { slug: slugify(name), name, story };
   }).get();
   const links = byKind(b, "link").filter((l) => l.href.includes("jobboards"));

@@ -1,0 +1,107 @@
+/* Shared UI: the copied crop-mark button, nav roll, photos, tickers, section heads, chips and cards. */
+
+/* ---------- Crop-mark button (hauze.pt Button/Secondary, rebuilt) ----------
+   Source CSS (framer-W8kCv): link padding 10px, overflow hidden; corners 11×11 absolute with 1px inner borders;
+   box padding 14px 27px with a 1px border at rgba(0,0,0,.4); flip column absolute, gap 10px, panels padding 14px 24px;
+   hover moves the column from top:0 to bottom:0 on spring { stiffness: 500, damping: 60, mass: 1 }. */
+.crop { --c: var(--navy); --fill: var(--navy); --on-fill: var(--white); --box-rule: var(--rule);
+  position: relative; display: inline-flex; padding: 10px; overflow: hidden; vertical-align: middle; -webkit-tap-highlight-color: transparent; }
+.crop-dark { --c: var(--white); --fill: var(--white); --on-fill: var(--navy); --box-rule: rgba(255, 255, 255, .4); }
+.crop-c { position: absolute; width: 11px; height: 11px; z-index: 1; pointer-events: none; }
+.crop-c::after { content: ""; position: absolute; inset: 0; border: 0 solid var(--c); }
+.crop-c.tl { left: 0; top: 0; } .crop-c.tl::after { border-right-width: 1px; border-bottom-width: 1px; }
+.crop-c.tr { right: 0; top: 0; } .crop-c.tr::after { border-left-width: 1px; border-bottom-width: 1px; }
+.crop-c.bl { left: 0; bottom: 0; } .crop-c.bl::after { border-right-width: 1px; border-top-width: 1px; }
+.crop-c.br { right: 0; bottom: 0; } .crop-c.br::after { border-left-width: 1px; border-top-width: 1px; }
+.crop-box { position: relative; display: flex; justify-content: center; padding: 14px 27px; overflow: hidden; box-shadow: inset 0 0 0 1px var(--box-rule); }
+.crop-size, .crop-one, .crop-two { font-size: 12px; line-height: 1.2; font-weight: 500; text-transform: uppercase; letter-spacing: .04em; white-space: pre; }
+.crop-size { color: transparent; }
+.crop-flip { position: absolute; left: 0; top: 0; width: 100%; display: flex; flex-direction: column; gap: 10px;
+  transform: translateY(0); transition: transform var(--spring-duration) var(--spring); }
+.crop-one, .crop-two { display: flex; justify-content: center; padding: 14px 24px; }
+.crop-one { color: var(--c); }
+.crop-two { background: var(--fill); color: var(--on-fill); }
+/* One panel height plus the 10px gap = half the column plus 5px. */
+.crop:hover .crop-flip, .crop:focus-visible .crop-flip { transform: translateY(calc(-50% - 5px)); }
+.crop:focus-visible { outline-offset: 0; }
+
+/* ---------- Header nav roll (hauze.pt stacks the label three times; one roll-up on Harrow's 0.2s hover curve) ---------- */
+.roll { position: relative; display: inline-block; overflow: hidden; vertical-align: top; }
+.roll > span { display: inline-block; transition: transform var(--hover-duration) var(--ease-hover); }
+.roll::after { content: attr(data-text); position: absolute; left: 0; top: 100%; transition: transform var(--hover-duration) var(--ease-hover); }
+a:hover > .roll > span, button:hover > .roll > span, a:hover > .roll::after, button:hover > .roll::after { transform: translateY(-100%); }
+
+.arrow { flex: none; transition: transform var(--hover-duration) var(--ease-hover); }
+a:hover .arrow, button:hover .arrow { transform: translate(2px, -2px); }
+
+/* ---------- Photos: navy 'color' layer keeps every photograph in the palette ---------- */
+.photo { position: relative; overflow: hidden; isolation: isolate; background: var(--navy); margin: 0; }
+.photo img { object-fit: cover; filter: contrast(1.06); transition: transform .9s var(--ease); }
+.photo::after { content: ""; position: absolute; inset: 0; background: var(--navy); mix-blend-mode: color; pointer-events: none; z-index: 1; }
+a:hover .photo img, .photo-zoom:hover img { transform: scale(1.03); }
+.caption { margin-top: 10px; font-size: 16px; line-height: 1.4; }
+.caption small { display: block; color: var(--muted); font-size: 14px; }
+
+/* ---------- Ticker (harrowservice.com's area and media tickers) ---------- */
+.ticker { overflow: hidden; }
+.ticker-track { display: flex; width: max-content; animation: ticker var(--ticker) linear infinite; animation-play-state: paused; }
+.ticker.is-running .ticker-track { animation-play-state: running; }
+.ticker:hover .ticker-track, .ticker:focus-within .ticker-track { animation-play-state: paused; }
+.ticker-row { display: flex; align-items: center; flex: none; }
+@keyframes ticker { to { transform: translateX(-50%); } }
+@media (prefers-reduced-motion: reduce) {
+  .ticker-track { animation: none; width: auto; }
+  .ticker-row { flex-wrap: wrap; justify-content: center; }
+  .ticker-row[aria-hidden] { display: none; }
+}
+
+/* ---------- Section heads, rules and lists ---------- */
+.section-head { display: grid; gap: 16px; max-width: 900px; }
+.section-head .h2 { max-width: 20ch; }
+.head-row { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: var(--gap); align-items: end; margin-bottom: clamp(36px, 4.5vw, 64px); }
+.head-row .body, .head-row .lede { max-width: 56ch; }
+@media (max-width: 900px) { .head-row { grid-template-columns: 1fr; gap: 20px; } }
+.rule-top { border-top: 1px solid var(--rule); }
+
+.bullets { display: grid; gap: 0; }
+.bullets li { display: flex; gap: 14px; align-items: baseline; padding: 14px 0; border-bottom: 1px solid var(--hairline); font-size: 16px; line-height: 1.4; }
+.bullets li::before { content: ""; flex: none; width: 6px; height: 6px; background: var(--blue); transform: translateY(-2px); }
+
+/* ---------- Archive controls ---------- */
+.archive-controls { display: flex; flex-wrap: wrap; gap: 16px 24px; align-items: center; justify-content: space-between; padding-bottom: 24px; border-bottom: 1px solid var(--rule); margin-bottom: clamp(28px, 3.5vw, 48px); }
+.search { position: relative; flex: 1 1 280px; max-width: 420px; }
+.search input { width: 100%; font: inherit; font-size: 16px; color: var(--ink); background: transparent; border: 0; border-bottom: 1px solid var(--navy); padding: 12px 36px 12px 0; border-radius: 0; }
+.search input::placeholder { color: var(--muted); }
+.search input:focus-visible { outline: none; border-bottom-color: var(--blue); box-shadow: 0 1px 0 var(--blue); }
+.search svg { position: absolute; right: 4px; top: 50%; transform: translateY(-50%); pointer-events: none; }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.chip { font-size: 12px; font-weight: 500; text-transform: uppercase; letter-spacing: .04em; padding: 10px 14px; box-shadow: inset 0 0 0 1px var(--rule); transition: background var(--hover-duration) var(--ease-hover), color var(--hover-duration) var(--ease-hover); }
+.chip:hover { box-shadow: inset 0 0 0 1px var(--navy); }
+.chip[aria-pressed="true"] { background: var(--navy); color: var(--white); box-shadow: inset 0 0 0 1px var(--navy); }
+.results-count { color: var(--muted); font-size: 14px; }
+.empty { padding: 48px 0; color: var(--muted); }
+.load-more { display: flex; justify-content: center; margin-top: clamp(36px, 4vw, 56px); }
+
+/* ---------- Cards ---------- */
+.grid-3 { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 40px 10px; }
+.grid-4 { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 40px 10px; }
+@media (max-width: 1100px) { .grid-4 { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+@media (max-width: 900px) { .grid-3, .grid-4 { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 560px) { .grid-3, .grid-4 { grid-template-columns: 1fr; } }
+.card { display: block; }
+.card .photo { aspect-ratio: 4 / 3; }
+.card-portrait .photo { aspect-ratio: 4 / 5; }
+.card-title { margin-top: 14px; font-size: 20px; line-height: 1.2; font-weight: 500; display: flex; justify-content: space-between; gap: 12px; }
+.card-meta { margin-top: 6px; font-size: 14px; color: var(--muted); }
+.card-meta span + span::before { content: "·"; margin: 0 8px; }
+.card:hover .card-title span { text-decoration: underline; text-underline-offset: 4px; text-decoration-thickness: 1px; }
+.story-card { display: flex; flex-direction: column; justify-content: space-between; gap: 32px; min-height: 280px; padding: 28px; background: var(--stone); transition: background var(--hover-duration) var(--ease-hover), color var(--hover-duration) var(--ease-hover); }
+.story-card p { color: var(--muted); transition: color var(--hover-duration) var(--ease-hover); }
+.story-card:hover { background: var(--navy); color: var(--white); }
+.story-card:hover p { color: var(--on-navy-muted); }
+.story-card .h5 { display: flex; justify-content: space-between; align-items: center; gap: 16px; }
+
+.socials { display: flex; gap: 8px; }
+.socials a { display: grid; place-items: center; width: 40px; height: 40px; box-shadow: inset 0 0 0 1px currentColor; transition: background var(--hover-duration) var(--ease-hover), color var(--hover-duration) var(--ease-hover); }
+.socials a:hover { background: var(--navy); color: var(--white); box-shadow: inset 0 0 0 1px var(--navy); }
+[data-tone="dark"] .socials a:hover { background: var(--white); color: var(--navy); }

@@ -5,3 +5,4 @@ _scrape
 *.tsbuildinfo
 .DS_Store
 .vercel
+.claude

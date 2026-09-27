@@ -2,7 +2,7 @@
 navy silhouettes so the client ticker stays inside the palette. Run after `npm run scrape`.
 Run: python3 scripts/clients.py   (needs Pillow)
 """
-import glob, os
+import glob, json, os
 from PIL import Image
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -11,6 +11,7 @@ OUT = os.path.join(SRC, "mono")
 NAVY = (0x1E, 0x2C, 0x51)
 os.makedirs(OUT, exist_ok=True)
 
+sizes = {}
 for path in sorted(glob.glob(os.path.join(SRC, "*.png"))):
     im = Image.open(path).convert("RGBA")
     px = im.load()
@@ -30,4 +31,10 @@ for path in sorted(glob.glob(os.path.join(SRC, "*.png"))):
     if box:
         out = out.crop(box)
     out.save(os.path.join(OUT, os.path.basename(path)), optimize=True)
+    sizes[os.path.basename(path)] = list(out.size)
     print(os.path.basename(path), out.size)
+
+# Cropped sizes, so next/image keeps each silhouette's true aspect ratio.
+with open(os.path.join(ROOT, "content", "client-logos.json"), "w") as f:
+    json.dump(sizes, f, indent=2)
+    f.write("\n")
