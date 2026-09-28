@@ -34,10 +34,9 @@ a:hover > .roll > span, button:hover > .roll > span, a:hover > .roll::after, but
 .arrow { flex: none; transition: transform var(--hover-duration) var(--ease-hover); }
 a:hover .arrow, button:hover .arrow { transform: translate(2px, -2px); }
 
-/* ---------- Photos: navy 'color' layer keeps every photograph in the palette ---------- */
-.photo { position: relative; overflow: hidden; isolation: isolate; background: var(--navy); margin: 0; }
-.photo img { object-fit: cover; filter: contrast(1.06); transition: transform .9s var(--ease); }
-.photo::after { content: ""; position: absolute; inset: 0; background: var(--navy); mix-blend-mode: color; pointer-events: none; z-index: 1; }
+/* ---------- Photos: shown in full colour (client review, 28 Sep); stone fills the frame while an image loads ---------- */
+.photo { position: relative; overflow: hidden; background: var(--stone); margin: 0; }
+.photo img { object-fit: cover; transition: transform .9s var(--ease); }
 a:hover .photo img, .photo-zoom:hover img { transform: scale(1.03); }
 .caption { margin-top: 10px; font-size: 16px; line-height: 1.4; }
 .caption small { display: block; color: var(--muted); font-size: 14px; }

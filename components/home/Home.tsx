@@ -3,21 +3,18 @@ import Advantage from "@/components/home/Advantage";
 import Clients from "@/components/home/Clients";
 import Expertise from "@/components/home/Expertise";
 import Hero from "@/components/home/Hero";
-import Journey from "@/components/home/Journey";
-import People from "@/components/home/People";
 import ProjectStrip from "@/components/home/ProjectStrip";
+import Testimonials from "@/components/home/Testimonials";
 
-/* Homepage order follows hauze.pt's rhythm: hero and media, about, services, captioned strip, advantage accordion,
-   then Coinford's own milestones, people and clients. */
+/* Order agreed in review: hero, client base, what we do, then about, projects, testimonials and the advantage accordion. */
 export default function Home() {
   return <>
     <Hero />
-    <About />
-    <Expertise />
-    <ProjectStrip />
-    <Advantage />
-    <Journey />
-    <People />
     <Clients />
+    <Expertise />
+    <About />
+    <ProjectStrip />
+    <Testimonials />
+    <Advantage />
   </>;
 }

@@ -6,7 +6,7 @@ import { pages } from "@/lib/content";
 /* The live "Client Base" carousel as a harrowservice.com ticker. Logos are navy silhouettes (scripts/clients.py). */
 export default function Clients() {
   const clients = pages.home.clients.filter((c) => c.logo);
-  return <section className="section clients" aria-labelledby="clients-title" data-late>
+  return <section className="section clients" aria-labelledby="clients-title">
     <div className="wrap"><h2 className="label clients-title" id="clients-title" data-reveal="label">Client Base</h2></div>
     <Ticker label="Coinford clients" seconds={48}>
       {clients.map((c) => {

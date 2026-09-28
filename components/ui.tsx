@@ -56,8 +56,7 @@ export function Logo({ className = "", title = "Coinford", parts = false }: { cl
   </svg>;
 }
 
-/* Photography stays inside the palette: every photo carries a navy layer in 'color' blend mode (hue and saturation
-   from the navy, light from the photo), so drone greens and machine yellows read as navy-blue monochrome. */
+/* Coinford's photography in full colour, with the shared clip-open reveal and optional parallax. */
 export function Photo({ media, alt = "", sizes = "100vw", priority, parallax, reveal = true, className = "", style }: {
   media: Media | null; alt?: string; sizes?: string; priority?: boolean; parallax?: boolean; reveal?: boolean; className?: string; style?: CSSProperties;
 }) {

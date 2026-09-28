@@ -58,7 +58,7 @@ To refresh the content, run `npm run scrape`, then `python3 scripts/clients.py`.
 
 | Route | What it is |
 | --- | --- |
-| `/` | Preloader, hero with brand film and stats, About, Our Expertise, project strip, Why Coinford accordion, milestones, leadership preview, client ticker |
+| `/` | Preloader, hero with brand film and stats, client ticker, Our Expertise, About, project strip, staff testimonials, Why Coinford accordion |
 | `/services`, `/services/[slug]` | The 5 services: scope list, preconstruction copy, photography, other services |
 | `/projects`, `/projects/[slug]` | The 9 projects. The archive has search, a Construction/Infrastructure filter and load more (6 at a time). Detail pages show location, contract value, client logo, scope, case study PDF, gallery and 3 related projects |
 | `/team`, `/team/[slug]` | The 10 leaders. The archive has search, a Board/Directors filter and load more (8 at a time), plus the Team Structure copy. Detail pages show portrait, role, full bio and 3 related people |
@@ -161,7 +161,7 @@ Rebuilt from Hauze's Framer component `Button/Secondary` (bundle `shared-lib.D4-
 
 ### Other systems
 
-- **Photography** (`Photo`): every photograph and the films carry a navy layer in `mix-blend-mode: color`. Hue and saturation come from the navy and light from the photo, so drone greens and machine yellows become navy monochrome.
+- **Photography** (`Photo`): Coinford's photographs and films are shown in full colour, as requested in review. A stone fill shows while each image loads.
 - **Client logos:** turned into navy silhouettes by `scripts/clients.py`.
 - **Films:** the hero film is muted and loops. It pauses off-screen, has a Play/Pause control, never autoplays with reduced motion, and phones get the 960px encode. The local poster (`hero-poster.jpg`) shows until it plays. The training film loads nothing until someone presses play.
 - **Tickers:** Harrow-style. They pause off-screen and on hover or focus.
@@ -209,3 +209,15 @@ The logo vectors come from the Blackwall Reach case study PDF.
 - **Reduced motion** (`matchMedia` stubbed): the preloader is skipped instantly and `data-intro="done"`. 78 of 78 reveal targets are marked shown, and the film is paused.
 - **The one internal route without the robots meta** is Next's built-in `_global-error` page.
 - **Caveat:** the preview pane was hidden during testing, which pauses `requestAnimationFrame`. Wall-clock animation timing was therefore read from the logged events and the timeline definitions, not watched frame by frame.
+
+## Review changes (28 Sep)
+
+From the client feedback in ClickUp:
+
+- **Photography in colour.** The navy colour layer was removed from every photo and from the hero film. The film's Play/Pause control now sits on a small navy chip instead of relying on a darkened image.
+- **"What we do" follows the header, with the client logos between.** The homepage order is now: hero, Client Base ticker, Our Expertise, About, projects, testimonials, Why Coinford.
+- **Removed from the homepage:** the leadership preview ("people") and the Our journey milestones. The milestones remain on `/about`.
+- **Spacing:** the section rhythm is tightened from 72–140px to 64–112px, and the client strip is a compact band under the hero.
+- **Cleaner Get in touch:** the grey band and long paragraph are replaced by a heading on the left and phone, email and a single "Send brief" button on the right.
+- **Footer logo:** the banner-sized tile logo is gone. The footer opens with a header-sized line-art logo, a one-line description and the socials, followed by the link columns. The navy bottom strip is now a light rule, so the page no longer ends on a dark block.
+- **Testimonials:** coinford.co.uk publishes no client testimonials. Its testimonial post type (`cpt_testimonials`, 11 posts) holds the same staff career stories. The homepage quotes three of them verbatim, each linking to the full story: Ben Reynolds, Senior Engineer; Guy Conyers, Project Manager; James Robinson, Site Manager.

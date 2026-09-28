@@ -29,7 +29,7 @@
   --gutter: clamp(16px, 3.5vw, 50px);
   --gap: clamp(24px, 4.9vw, 70px);
   --max: 1540px;
-  --section: clamp(72px, 9vw, 140px);
+  --section: clamp(64px, 7vw, 112px);
   --header: 104px;
 
   --display: "Bebas Neue", "Arial Narrow", sans-serif;

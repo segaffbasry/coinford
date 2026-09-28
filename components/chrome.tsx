@@ -125,26 +125,31 @@ function Header() {
   </>;
 }
 
-/* hauze.pt closes every page with a grey CTA band and a big-wordmark footer; the copy here is Coinford's own. */
+/* Every page closes with a short, quiet contact band and the footer. The copy is Coinford's own. */
 function Footer() {
   const offices = pages.contact.offices;
   return <>
-    <section className="cta-band band" aria-labelledby="cta-title" data-late>
+    <section className="cta-band" aria-labelledby="cta-title" data-late>
       <div className="wrap cta-band-inner">
         <div>
+          <p className="eyebrow" data-reveal="label">Contact Us</p>
           <h2 className="h2" id="cta-title" data-reveal="heading">Have questions? Get in touch!</h2>
-          <p className="body" data-reveal="text">{pages.contact.intro}</p>
         </div>
-        <div className="cta-band-side">
-          <CropButton href="/contact">Send brief</CropButton>
-          <a className="cta-phone h5" href={contact.tel} data-reveal="label">{contact.phone}</a>
+        <div className="cta-band-side" data-reveal="card">
+          <a className="cta-link h4" href={contact.tel}>{contact.phone}</a>
+          <a className="cta-link h4" href={contact.mailto}>{contact.email}</a>
+          <CropButton href="/contact" reveal={false}>Send brief</CropButton>
         </div>
       </div>
     </section>
     <footer className="site-footer" data-late>
       <div className="wrap">
-        <Link href="/" className="footer-mark" aria-label="Coinford home" data-reveal="image"><Logo className="logo-print" title="Coinford" /></Link>
         <div className="footer-cols">
+          <div className="footer-brand" data-reveal="card">
+            <Link href="/" aria-label="Coinford home" className="footer-logo"><Logo className="logo-line" title="Coinford" /></Link>
+            <p className="body">Groundwork &amp; concrete frame specialists in London &amp; the South East since 1990.</p>
+            <ul className="socials">{socials.map((s) => <li key={s.name}><a href={s.href} target="_blank" rel="noreferrer" aria-label={`Coinford on ${s.name}`}><SocialIcon icon={s.icon} /></a></li>)}</ul>
+          </div>
           <div data-reveal="card"><h3 className="h5">Quick links</h3><ul>{footerLinks.map((l) => <li key={l.href}><SmartLink link={l} /></li>)}</ul></div>
           <div data-reveal="card"><h3 className="h5">Expertise</h3><ul>{services.map((s) => <li key={s.slug}><Link href={`/services/${s.slug}`}>{s.title}</Link></li>)}</ul></div>
           <div data-reveal="card"><h3 className="h5">Reach us</h3>
@@ -152,12 +157,11 @@ function Footer() {
             <p><a href={contact.mailto}>{contact.email}</a><br /><a href={contact.tel}>{contact.phone}</a></p>
           </div>
           <div data-reveal="card"><h3 className="h5">Policies</h3><ul>{policies.map((l) => <li key={l.href}><SmartLink link={l} /></li>)}</ul>
-            <ul className="socials">{socials.map((s) => <li key={s.name}><a href={s.href} target="_blank" rel="noreferrer" aria-label={`Coinford on ${s.name}`}><SocialIcon icon={s.icon} /></a></li>)}</ul>
           </div>
         </div>
       </div>
-      <div className="footer-bar" data-tone="dark">
-        <div className="wrap footer-bar-inner"><p>© {new Date().getFullYear()} Coinford Ltd</p><p>Groundwork &amp; concrete frame specialists, London &amp; the South East</p></div>
+      <div className="footer-bar">
+        <div className="wrap footer-bar-inner"><p>© {new Date().getFullYear()} Coinford Ltd</p><p><a href={contact.tel}>{contact.phone}</a> · <a href={contact.mailto}>{contact.email}</a></p></div>
       </div>
     </footer>
   </>;

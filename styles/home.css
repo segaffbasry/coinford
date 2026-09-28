@@ -12,8 +12,8 @@
 .hero-copy .lede { max-width: 46ch; }
 .hero-actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 28px; margin-left: -10px; }
 .hero-film { margin-top: clamp(32px, 4vw, 56px); width: 100%; aspect-ratio: 16 / 9; max-height: 78vh; }
-.hero-film video, .hero-film .hero-poster { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; filter: contrast(1.06); }
-.film-toggle { position: absolute; z-index: 2; left: 16px; bottom: 16px; display: inline-flex; align-items: center; gap: 10px; padding: 12px 14px; color: var(--white); box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .5); transition: background var(--hover-duration) var(--ease-hover), color var(--hover-duration) var(--ease-hover); }
+.hero-film video, .hero-film .hero-poster { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.film-toggle { position: absolute; z-index: 2; left: 16px; bottom: 16px; display: inline-flex; align-items: center; gap: 10px; padding: 12px 14px; color: var(--white); background: var(--navy); transition: background var(--hover-duration) var(--ease-hover), color var(--hover-duration) var(--ease-hover); }
 .film-toggle:hover { background: var(--white); color: var(--navy); }
 .film-icon { display: inline-flex; gap: 3px; width: 10px; height: 10px; }
 .film-icon i { width: 3px; height: 10px; background: currentColor; }
@@ -56,7 +56,7 @@
 .expertise-summary { grid-area: sum; font-size: 14px; line-height: 1.4; color: var(--muted); transition: color var(--hover-duration) var(--ease-hover); }
 .expertise-row:hover .expertise-summary, .expertise-row:focus-visible .expertise-summary { color: var(--on-navy-muted); }
 .expertise-row .arrow { grid-area: a; }
-.expertise-foot { margin-top: 32px; display: flex; justify-content: flex-end; }
+.expertise-foot { margin-top: 24px; display: flex; justify-content: flex-end; }
 @media (max-width: 900px) {
   .expertise-grid { grid-template-columns: 1fr; }
   .expertise-media { display: none; }
@@ -109,8 +109,21 @@
 .journey-year { display: block; font-size: clamp(48px, 4.4vw, 68px); color: var(--blue); }
 .journey-list p { margin-top: 14px; font-size: 16px; line-height: 1.4; }
 
-/* ---------- Clients ---------- */
-.clients { padding-bottom: clamp(56px, 6vw, 96px); }
-.clients-title { margin-bottom: clamp(28px, 3vw, 44px); color: var(--muted); }
+/* ---------- Clients (directly under the hero) ---------- */
+.section.clients { padding-block: clamp(48px, 5vw, 72px); border-bottom: 1px solid var(--hairline); }
+.clients + .section { padding-top: var(--section); }
+.clients-title { margin-bottom: clamp(24px, 2.5vw, 36px); color: var(--muted); }
 .client { padding: 0 clamp(28px, 3.4vw, 56px); }
 .client img { height: clamp(34px, 3.2vw, 50px); width: auto; max-width: 190px; object-fit: contain; }
+
+/* ---------- Testimonials (staff stories; the live site has no client testimonials) ---------- */
+.quotes { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; }
+.quote { display: flex; flex-direction: column; gap: 20px; height: 100%; padding: clamp(24px, 2.4vw, 36px); background: var(--stone); transition: background var(--hover-duration) var(--ease-hover), color var(--hover-duration) var(--ease-hover); }
+.quote-mark { font-size: 72px; line-height: .6; height: 32px; color: var(--blue); }
+.quote blockquote { margin: 0; flex: 1; font-weight: 400; line-height: 1.4; }
+.quote-by { display: flex; justify-content: space-between; align-items: end; gap: 16px; padding-top: 18px; border-top: 1px solid var(--rule); font-size: 14px; color: var(--muted); }
+.quote-by strong { display: block; color: var(--ink); font-weight: 500; font-size: 16px; }
+.quote:hover { background: var(--navy); color: var(--white); }
+.quote:hover .quote-by { color: var(--on-navy-muted); border-top-color: var(--on-navy-rule); }
+.quote:hover .quote-by strong, .quote:hover .quote-mark { color: var(--white); }
+@media (max-width: 900px) { .quotes { grid-template-columns: 1fr; } }
