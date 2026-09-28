@@ -4,6 +4,7 @@ import gsap from "gsap";
 import { useEffect, useRef, useState } from "react";
 import { CropButton, reducedMotion } from "@/components/ui";
 import { pages } from "@/lib/content";
+import { logoParts, logoSize } from "@/lib/logo";
 import { splitWords } from "@/lib/split";
 
 const home = pages.home;
@@ -66,36 +67,46 @@ export default function Hero() {
     if (v.paused) { manual.current = false; v.play().catch(() => {}); } else { manual.current = true; v.pause(); }
   };
 
-  return <section className="hero wrap" ref={root} data-hero aria-labelledby="hero-title">
-    <div className="hero-top">
-      <div className="hero-heading">
-        <p className="eyebrow" data-reveal="label">{home.eyebrow}</p>
-        <h1 className="display hero-title" id="hero-title">
-          {home.headline!.split(" • ").map((part, i, all) => <span className="hero-line" key={part}><span>{part}{i < all.length - 1 && <i aria-hidden="true"> •</i>}</span></span>)}
-        </h1>
-      </div>
-      <div className="hero-copy">
-        <p className="lede" data-reveal="text">{offer.lead} {offer.range}</p>
-        <div className="hero-actions">
-          <CropButton href="/services">Our expertise</CropButton>
-          <CropButton href="/contact">Send brief</CropButton>
+  return <section className="hero" ref={root} data-hero aria-labelledby="hero-title">
+    {/* A navy opening (client review, 28 Sep) with the shield and lion drawn large behind the headline. */}
+    <div className="hero-stage" data-tone="dark">
+      <svg className="hero-mark" viewBox={`0 0 ${logoSize.markWidth} ${logoSize.height}`} aria-hidden="true">
+        <path d={logoParts.shield.d} fillRule="evenodd" /><path d={logoParts.lion.d} fillRule="evenodd" />
+      </svg>
+      <div className="wrap">
+        <div className="hero-top">
+          <div className="hero-heading">
+            <p className="eyebrow" data-reveal="label">{home.eyebrow}</p>
+            <h1 className="display hero-title" id="hero-title">
+              {home.headline!.split(" • ").map((part, i, all) => <span className="hero-line" key={part}><span>{part}{i < all.length - 1 && <i aria-hidden="true"> •</i>}</span></span>)}
+            </h1>
+          </div>
+          <div className="hero-copy">
+            <p className="lede" data-reveal="text">{offer.lead} {offer.range}</p>
+            <div className="hero-actions">
+              <CropButton href="/services" dark>Our expertise</CropButton>
+              <CropButton href="/contact" dark>Send brief</CropButton>
+            </div>
+          </div>
         </div>
+        <figure className="photo hero-film" data-reveal="image">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/media/film/hero-poster.jpg" alt="" className="hero-poster" />
+          {src && <video ref={video} src={src} muted playsInline loop preload="metadata" poster="/media/film/hero-poster.jpg"
+            onPlay={() => setPlaying(true)} onPause={() => setPlaying(false)} aria-label="Coinford site film: drone footage of earthworks and groundworks" />}
+          <button className="film-toggle label" onClick={toggle} aria-pressed={!playing}>
+            <span className="film-icon" aria-hidden="true">{playing ? <><i /><i /></> : <b />}</span>{playing ? "Pause film" : "Play film"}
+          </button>
+        </figure>
       </div>
     </div>
-    <figure className="photo hero-film" data-tone="dark" data-reveal="image">
-      {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img src="/media/film/hero-poster.jpg" alt="" className="hero-poster" />
-      {src && <video ref={video} src={src} muted playsInline loop preload="metadata" poster="/media/film/hero-poster.jpg"
-        onPlay={() => setPlaying(true)} onPause={() => setPlaying(false)} aria-label="Coinford site film: drone footage of earthworks and groundworks" />}
-      <button className="film-toggle label" onClick={toggle} aria-pressed={!playing}>
-        <span className="film-icon" aria-hidden="true">{playing ? <><i /><i /></> : <b />}</span>{playing ? "Pause film" : "Play film"}
-      </button>
-    </figure>
+    <div className="wrap">
     <dl className="stats">
       {home.stats.map((stat) => <div className="stat" key={stat.label} data-reveal="card">
         <dt className="label">{stat.label.replace(/^£\s*/, "").replace(/^\w/, (c) => c.toUpperCase())}</dt>
         <dd className="display num">{stat.label.startsWith("£") ? "£" : ""}{stat.value.toLocaleString("en-GB")}{stat.suffix}</dd>
       </div>)}
     </dl>
+    </div>
   </section>;
 }

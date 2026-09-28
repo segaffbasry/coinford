@@ -7,8 +7,9 @@ import { Logo, reducedMotion } from "@/components/ui";
 /* The company signing its name, built from the logo's own vector shapes (lib/logo.ts).
    Build (0.1–0.9s): the navy mark tile lands, the shield ring and lion rise into it one after another, then the
    wordmark tile wipes open left to right while the letters C·o·i·n·f·o·r·d rise inside it.
-   Hold (to 1.15s). Exit (1.15–1.7s): the whole lock-up travels and shrinks into the header logo while the white
-   ground fades onto the white hero, so there is no colour change at handover. One GSAP timeline, 1.7s in all. */
+   Hold (to 1.15s). Exit (1.15–1.7s): the whole lock-up travels and shrinks into the header logo while the navy
+   ground fades onto the navy hero, so there is no colour change at handover. On navy the tiles are transparent,
+   so the build reads as white line art: shield, lion, then the letters wiping in. One GSAP timeline, 1.7s in all. */
 export default function Preloader() {
   const ref = useRef<HTMLDivElement>(null);
 
@@ -46,7 +47,7 @@ export default function Preloader() {
         const from = logo.getBoundingClientRect(), to = target.getBoundingClientRect();
         gsap.to(logo, { x: to.left - from.left + (to.width - from.width) / 2, y: to.top - from.top + (to.height - from.height) / 2, scale: to.width / from.width, duration: .55, ease: "coinford" });
       }, "exit")
-      .to(el, { backgroundColor: "rgba(255,255,255,0)", duration: .45, ease: "coinford" }, "exit+=.1")
+      .to(el, { backgroundColor: "rgba(30,44,81,0)", duration: .45, ease: "coinford" }, "exit+=.1")
       // The hero starts its entrance as the logo lands, so the two moves overlap into one.
       .add(handover, "exit+=.2")
       .set({}, {}, "exit+=.55");
@@ -59,6 +60,6 @@ export default function Preloader() {
   return <div className="preloader" ref={ref} aria-hidden="true">
     {/* Set before first paint so the header logo and hero are held back while the sign is on screen. */}
     <script dangerouslySetInnerHTML={{ __html: "if(!matchMedia('(prefers-reduced-motion: reduce)').matches)document.documentElement.classList.add('is-loading','is-landing')" }} />
-    <div className="preloader-sign"><Logo parts title="" /></div>
+    <div className="preloader-sign"><Logo parts title="" className="logo-on-dark" /></div>
   </div>;
 }

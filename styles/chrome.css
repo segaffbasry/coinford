@@ -63,7 +63,7 @@ html.is-landing .site-header .brand .logo { visibility: hidden; }
 }
 
 /* ---------- Preloader ---------- */
-.preloader { position: fixed; inset: 0; z-index: 300; background: var(--white); display: grid; place-items: center; pointer-events: none; }
+.preloader { position: fixed; inset: 0; z-index: 300; background: var(--navy); /* the hero opens on navy */ display: grid; place-items: center; pointer-events: none; }
 .preloader-sign { width: min(64vw, 440px); visibility: hidden; }
 .preloader .logo { will-change: transform; transform-origin: 50% 50%; }
 .preloader [data-part] { transform-box: fill-box; }

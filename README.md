@@ -221,3 +221,13 @@ From the client feedback in ClickUp:
 - **Cleaner Get in touch:** the grey band and long paragraph are replaced by a heading on the left and phone, email and a single "Send brief" button on the right.
 - **Footer logo:** the banner-sized tile logo is gone. The footer opens with a header-sized line-art logo, a one-line description and the socials, followed by the link columns. The navy bottom strip is now a light rule, so the page no longer ends on a dark block.
 - **Testimonials:** coinford.co.uk publishes no client testimonials. Its testimonial post type (`cpt_testimonials`, 11 posts) holds the same staff career stories. The homepage quotes three of them verbatim, each linking to the full story: Ben Reynolds, Senior Engineer; Guy Conyers, Project Manager; James Robinson, Site Manager.
+
+## Review changes (28 Sep, second round)
+
+- **Navy opening.** The homepage now opens on navy instead of white text on white:
+  - The hero text and the top of the film sit on a navy stage (`.hero-stage`). The last 20% or so of the film rests on white, so the page opens up below it.
+  - The shield and lion from the logo are drawn large at 7% white behind the headline, so the brand mark is present as the page loads.
+  - The preloader now builds on the same navy with the white line-art logo, then fades onto the navy hero, so there is still no colour jump.
+  - The header starts white over the hero and turns navy once it reaches white sections.
+- **Room above Our Expertise.** A higher-specificity rule was zeroing the section's top padding under the client band. It now gets the full section spacing (about 100px at 1440).
+- **About section.** The photo pair now has a 32–64px gap instead of 10px. The side text is capped at 44ch, and the "About Coinford" button no longer pulls into the photo edge.
